@@ -4,7 +4,7 @@ require 'http'
 p "please enter the city you would like to know the weather of"
 user_input = gets.chomp
 
-response = HTTP.get("http://api.openweathermap.org/data/2.5/weather?q=#{user_input}&APPID=&units=imperial")
+response = HTTP.get("http://api.openweathermap.org/data/2.5/weather?q=#{user_input}&APPID=3c5ca86e43da691659345383d21f7d9b&units=imperial")
 
 temperature = response.parse['main']['temp']
 
